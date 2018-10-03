@@ -47,8 +47,6 @@ function draw()
 	// Example 1: easy to understand - End
 
 
-
-
 	// Example 2: less code but harder to understand - Start
 
 	strokeWeight(3);
@@ -61,7 +59,7 @@ function draw()
 			fill(47,247,114);
 		}
 
-		rect(button2X,button2Y,100,50);
+		rect(button2X,button2Y,50,100);
 		textSize(16);
 		fill(255,255,255);
 		stroke(0,0,0);
@@ -75,6 +73,87 @@ function draw()
 		fill(255,255,255);
 		stroke(0,0,0);
 		text("Options",button2X+30,button2Y+30);
+	}
+
+	if (mouseX > 300 && mouseX < 300 + 100 && mouseY > 300 && mouseY < 300+50)
+	{
+		fill(255,200,0);
+		stroke(0,0,0);
+		strokeWeight(3);
+		rect(300,300,100,50);	
+
+		fill(255,255,255);
+		stroke(0,0,0);
+		textSize(12);
+		text("Shanghai",330,330);
+		if (mouseIsPressed == true)
+		{
+			fill(47,247,114);
+			stroke(0,0,0);
+			strokeWeight(3);
+			rect(300,300,100,50);	
+		
+		fill(255,255,255);
+		stroke(0,0,0);
+		textSize(12);
+		text("Academy",330,330);
+		}
+					
+	}
+	
+	else
+	{
+		fill(200,200,255);
+		stroke(0,0,0);
+		strokeWeight(3);
+		rect(300,300,100,50);	
+
+		fill(255,255,255);
+		stroke(0,0,0);
+		textSize(12);
+		text("Victoria",330,330);
+	
+	}
+
+
+	if (mouseX > 150 && mouseX < 150 + 100 && mouseY > 200 && mouseY < 200+50)
+	{
+		fill(0,255,0);
+		stroke(0,0,0);
+		strokeWeight(3);
+		rect(150,200,100,50);	
+
+		fill(255,255,255);
+		stroke(0,0,0);
+		textSize(12);
+		text("Amazon",175,230);
+		if (mouseIsPressed == true)
+		{
+			fill(255,0,0);
+			stroke(0,0,0);
+			strokeWeight(3);
+			rect(150,200,100,50);	
+		
+		fill(255,255,255);
+		stroke(0,0,0);
+		textSize(12);
+		text("Nile",175,230);
+		}
+					
+	}
+	
+	else
+	{
+		fill(154,0,255);
+		stroke(0,0,0);
+		strokeWeight(3);
+		rect(150,200,100,50);	
+
+		fill(255,255,255);
+		stroke(0,0,0);
+		textSize(12);
+		text("Danube",175,230);
+	
 	}
 
 
