@@ -1,23 +1,24 @@
-var imageIntroTitle;
+
+var buttonIntro
 
 function preloadIntro()
 {
-	imageIntroTitle = loadImage('https://bleungwpg.github.io/p5jsTutorial3.2/images/titleIntro.png');	
+	imageIntroTitle = loadImage ('y10-p5js-criterion-a-submission-y10-ryan-a/p5jsTutorial3.2-master/buttonIntro.png')
 }
 
 function setupIntro()
 {
 
+  
 }
 
 function drawIntro()
 {
-	background(125,125,125)
-
-	image(imageIntroTitle,400,50);
-
-	if (mouseIsPressed)
+	text("This is Intro Page \n\nClick Anywhere to continue",10.50);
+	if(mouseIsPressed)
 	{
-		canvasID = -1;
+		canvasID = 2
 	}
+
+
 }
